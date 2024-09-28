@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -153,22 +154,32 @@ ul li a:hover {
 
 footer {
   padding: 24px 0;
-  text-align: center;   
-  font-size: 14px
+  text-align: center;
+  font-size: 14px;
 }
 .container {
-   text-align: center;
-   padding: 80px;
-
+  text-align: center;
+  padding: 80px;
 }
 
 .container img {
-    width: 500px;
-    margin-top: 40px;
-    border-radius: 60%;
-    border: 2px solid whitesmoke;
+  width: 500px;
+  margin-top: 40px;
+  border-radius: 60%;
+  border: 2px solid whitesmoke;
 }
 .container p {
-    margin: 6px;
-    font-size: 20px;
+  margin: 6px;
+  font-size: 20px;
+}
+
+/* medias quiries */
+@media (min-widht: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jgp);
+  }
+
+  :light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
